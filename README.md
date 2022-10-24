@@ -2,7 +2,7 @@
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-green.svg?style=flat-square)](http://makeapullrequest.com)
 [![arXiv](https://img.shields.io/badge/arXiv-2201.11675-b31b1b.svg)](https://arxiv.org/abs/2201.11675)
 
-This repo contains the code and datasets from our paper: [Learning Stance Embeddings from Signed Social Graphs](https://arxiv.org/abs/2209.07562). <br />
+This repo contains the code and datasets from our paper [Learning Stance Embeddings from Signed Social Graphs](https://arxiv.org/abs/2209.07562). <br />
 [[PDF]](https://arxiv.org/pdf/2201.11675.pdf)
 [[HuggingFace Datasets]](https://huggingface.co/Twitter)
 
@@ -21,13 +21,13 @@ We open source **two Twitter signed, topical graph datasets**. One dataset, **Tw
 
 Twitter Signed Graph, or TwitterSG, is a signed, directed, edge-attributed graph of users, drawn from Twitter interactions. TwitterSG contains 753,944 nodes (users), 200 topics and 12,848,093 edges. It is the largest publicly available user-to-user signed social graph (∼6x larger than the Epinions graph).
 
-A positive signed edge exists from user 𝐴 to user 𝐵 if user 𝐴 liked a tweet. posted by user 𝐵. A negative-signed edge exists from user 𝐴 to user 𝐵 if user 𝐴 expressed opposition towards user 𝐵’s tweet, e.g., by replying *I disagree with you*. The topic of an edge from user 𝐴 to user 𝐵 is determined by the topic of user 𝐵’s tweet, also called the target tweet. 
+A positive edge exists from user 𝐴 to user 𝐵 if user 𝐴 liked a tweet posted by user 𝐵. A negative edge exists from user 𝐴 to user 𝐵 if user 𝐴 expressed opposition towards user 𝐵’s tweet, e.g., by replying *I disagree with you*. The topic of an edge from user 𝐴 to user 𝐵 is determined by the topic of user 𝐵’s tweet. 
 
-Tweets' topics were inferred with a topic classifier used in production by Twitter. Provided topics are all related to sports (e.g., sports teams, players, managers, or events), and the tweets related to these interactions were published between 20th May (Ice Hockey World Championships) and 8th August 2021 (closing date of the 2020 Tokyo Olympic Games). 
+Tweets' topics were inferred with a topic classifier used in production by Twitter. The topics provided in the dataset are all related to sports (e.g., sports teams, players, managers, or events), and the tweets related to these interactions were published between 20th May (Ice Hockey World Championships) and 8th August 2021 (closing date of the 2020 Tokyo Olympic Games). 
 
 9.6\% of edges are negative (opposition) and 90.4\% are positive. There may be several edges between two nodes (several interactions, several topics). The data format is displayed below.
 
-| source_node | target_node | topic | sign |
+| src_node | tgt_node | topic | sign |
 | ------------- | ------------- | --------- | ---- |
 | 1   | 6 | Copa America | +1 |
 | 1   | 6 | NFL | -1 |
@@ -35,15 +35,15 @@ Tweets' topics were inferred with a topic classifier used in production by Twitt
 
 ### BirdwatchSG
 
-Birdwatch Signed Graph, or BirdwatchSG, is a signed, directed, edge-attributed graph of users, drawn from note ratings on the [Birdwatch pilot ](https://blog.twitter.com/en_us/topics/product/2021/introducing-birdwatch-a-community-based-approach-to-misinformation). The graph contains 2,987 nodes (users), 1,200 topics and 441,986 edges. 
+Birdwatch Signed Graph, or BirdwatchSG, is a signed, directed, edge-attributed graph of users, drawn from note ratings on the Birdwatch pilot. The graph contains 2,987 nodes (users), 1,200 topics and 441,986 edges. 
 
-Birdwatch pilot was launched by Twitter in January 2021 in the USA to address misleading information on the platform, in a community-driven fashion: the Birdwatch participants can identify information in tweets they believe is misleading and write notes that provide informative context. They can also rate the helpfulness (either helpful, somewhat helpful, or not helpful) of notes added by other contributors. All Birdwatch contributions are publicly available on the Download Data page of the [Birdwatch site](https://twitter.github.io/birdwatch/) so that anyone in the USA has free access to analyse the data.
+[Birdwatch pilot](https://blog.twitter.com/en_us/topics/product/2021/introducing-birdwatch-a-community-based-approach-to-misinformation) was launched by Twitter in January 2021 in the USA to address misleading information on the platform, in a community-driven fashion: the Birdwatch participants can identify information they believe is misleading in tweets and write notes that provide informative context. They can also rate the helpfulness (either *helpful*, *somewhat helpful*, or *not helpful*) of notes added by other contributors. All Birdwatch contributions are publicly available on the [Birdwatch site](https://twitter.github.io/birdwatch/) for anyone in the USA.
 
-Based on Birdwatch data from January to July 2021, a positive (negative) edge is created from participant 𝑈1 to 𝑈2 if participant 𝑈1 rated a note written by participant 𝑈2 as *helpful* (*not helpful*). The *somewhat helpful* ratings were filtered out. The topic associated with an edge is the topic inferred from the tweet the note refers to.
+Using Birdwatch data from January to July 2021, a positive (negative) edge is created from participant 𝑈1 to 𝑈2 if participant 𝑈1 rated a note written by participant 𝑈2 as *helpful* (*not helpful*). The *somewhat helpful* ratings were filtered out. The topic associated with an edge is the topic inferred from the tweet the note refers to.
 
 36.9% of edges are negative (opposition) and 63.1% are positive. There may be several edges between two nodes (several interactions, several topics).
 
-| source_node | target_node | topic | sign |
+| src_node | tgt_node | topic | sign |
 | ------------- | ------------- | --------- | ---- |
 | 10   | 6 | US Politics | +1 |
 | 7   | 14 | Ted Cruz | -1 |
