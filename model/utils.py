@@ -155,8 +155,8 @@ class Dataloader:
         print('Created mapping dicts.')
       
         self.size_graph = len(self.node2idx)
-        self.training_data = {'hetero': {}, 'homo': {}}
-        self.test_data = {'hetero': {}, 'homo': {}}
+        self.training_data = {'hetero': {}, }
+        self.test_data = {'hetero': {}, }
       
         print('\nCollecting CVfolds...')
         for count in range(5):
