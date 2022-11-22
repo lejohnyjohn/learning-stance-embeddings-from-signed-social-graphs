@@ -10,6 +10,7 @@
 # In[ ]:
 
 
+import os
 import numpy as np
 import pandas as pd
 from sklearn.model_selection import StratifiedKFold, KFold
@@ -46,6 +47,14 @@ class DataBuilder:
             self.topic_data_available = True
         else:
             self.topic_data_available = False
+            
+        paths = ['../datasets/cache/{}/CVfolds'.format(dataset_name),
+                 '../datasets/cache/{}/walks'.format(dataset_name),  
+                 '../datasets/cache/{}/contexts'.format(dataset_name)]
+        for path in paths:
+            if not os.path.exists(path):
+                os.makedirs(path)
+        
         self.__mapping(edge_data)
         if self.save_folds:
             self.__info()
