@@ -21,7 +21,7 @@ We open source **two Twitter signed, topical graph datasets**. One dataset, **Tw
 
 Twitter Signed Graph, or TwitterSG, is a signed, directed, edge-attributed graph of users, drawn from Twitter interactions. TwitterSG contains 753,944 nodes (users), 200 topics and 12,848,093 edges. It is the largest publicly available user-to-user signed social graph (∼6x larger than the Epinions graph).
 
-A positive edge exists from user 𝐴 to user 𝐵 if user 𝐴 liked a tweet posted by user 𝐵. A negative edge exists from user 𝐴 to user 𝐵 if user 𝐴 expressed opposition towards user 𝐵’s tweet, e.g., by replying *I disagree with you*. The topic of an edge from user 𝐴 to user 𝐵 is determined by the topic of user 𝐵’s tweet. 
+A positive edge exists from user 𝐴 to user 𝐵 if user 𝐴 liked a tweet posted by user 𝐵. A negative edge exists from user 𝐴 to user 𝐵 if user 𝐴 expressed opposition towards user 𝐵’s tweet, e.g., by replying *I disagree with you*. The full list of opposition keywords is specified [here](https://github.com/lejohnyjohn/learning-stance-embeddings-from-signed-social-graphs/tree/main/datasets). The topic of an edge from user 𝐴 to user 𝐵 is determined by the topic of user 𝐵’s tweet. 
 
 Tweets' topics were inferred with a topic classifier used in production by Twitter. The topics provided in the dataset are all related to sports (e.g., sports teams, players, managers, or events), and the tweets related to these interactions were published between 20th May (Ice Hockey World Championships) and 8th August 2021 (closing date of the 2020 Tokyo Olympic Games). 
 
