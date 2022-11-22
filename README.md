@@ -27,11 +27,11 @@ Tweets' topics were inferred with a topic classifier used in production by Twitt
 
 9.6\% of edges are negative (opposition) and 90.4\% are positive. There may be several edges between two nodes (several interactions, several topics). The data format is displayed below.
 
-| src_node | tgt_node | topic | sign |
-| ------------- | ------------- | --------- | ---- |
-| 1   | 6 | Copa America | +1 |
-| 1   | 6 | NFL | -1 |
-| 4   | 5 | Kylian Mbappe | +1 |
+| source_idx | target_idx | topic_idx | topic | rating |
+| ------------- | ------------- | ---------- | ------ | ---- |
+| 1   | 6 | 19 | Copa America | +1 |
+| 1   | 6 | 97 | NFL | -1 |
+| 4   | 5 | 23 |Kylian Mbappe | +1 |
 
 ### BirdwatchSG
 
@@ -43,11 +43,11 @@ Using Birdwatch data from January to July 2021, a positive (negative) edge is cr
 
 36.9% of edges are negative (opposition) and 63.1% are positive. There may be several edges between two nodes (several interactions, several topics).
 
-| src_node | tgt_node | topic | sign |
-| ------------- | ------------- | --------- | ---- |
-| 10   | 6 | US Politics | +1 |
-| 7   | 14 | Ted Cruz | -1 |
-| 1   | 11 | COVID-19 | +1 |
+| source_idx | target_idx | topic_idx | topic | rating |
+| ------------- | ------------- | ---------- | ------ | ---- |
+| 10   | 6 | 443 | US Politics | +1 |
+| 7   | 14 | 12 | Ted Cruz | -1 |
+| 1   | 11 | 1003 | COVID-19 | +1 |
 
 ## Citation
 If you use SEM or our datasets in your work, please cite the following:
