@@ -35,7 +35,7 @@ Tweets' topics were inferred with a topic classifier used in production by Twitt
 
 ### BirdwatchSG
 
-Birdwatch Signed Graph, or BirdwatchSG, is a signed, directed, edge-attributed graph of users, drawn from note ratings on the Birdwatch pilot. The graph contains 2,987 nodes (users), 1,200 topics and 441,986 edges. 
+Birdwatch Signed Graph, or BirdwatchSG, is a signed, directed, edge-attributed graph of users, drawn from note ratings on the Birdwatch pilot. The graph contains 2,987 nodes (users), 1,020 topics and 441,986 edges. 
 
 [Birdwatch pilot](https://blog.twitter.com/en_us/topics/product/2021/introducing-birdwatch-a-community-based-approach-to-misinformation) was launched by Twitter in January 2021 in the USA to address misleading information on the platform, in a community-driven fashion: the Birdwatch participants can identify information they believe is misleading in tweets and write notes that provide informative context. They can also rate the helpfulness (either *helpful*, *somewhat helpful*, or *not helpful*) of notes added by other contributors. All Birdwatch contributions are publicly available on the [Birdwatch site](https://twitter.github.io/birdwatch/) for anyone in the USA.
 
