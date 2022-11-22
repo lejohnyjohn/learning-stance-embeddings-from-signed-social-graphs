@@ -50,7 +50,7 @@ Using Birdwatch data from January to July 2021, a positive (negative) edge is cr
 | 1   | 11 | COVID-19 | +1 |
 
 ## Citation
-If you use SEM or our datasets in your work, please cite, please cite the following:
+If you use SEM or our datasets in your work, please cite the following:
 ```bib
 @article{pougue2022learning,
   title={Learning Stance Embeddings from Signed Social Graphs},
