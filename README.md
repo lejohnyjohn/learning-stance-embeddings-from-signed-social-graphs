@@ -2,7 +2,7 @@
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-green.svg?style=flat-square)](http://makeapullrequest.com)
 [![arXiv](https://img.shields.io/badge/arXiv-2201.11675-b31b1b.svg)](https://arxiv.org/abs/2201.11675)
 
-This repo contains the code and datasets from our paper [Learning Stance Embeddings from Signed Social Graphs](https://arxiv.org/abs/2209.07562). <br />
+This repo contains the code and datasets from our paper [Learning Stance Embeddings from Signed Social Graphs](https://arxiv.org/abs/2201.11675). <br />
 [[PDF]](https://arxiv.org/pdf/2201.11675.pdf)
 [[HuggingFace Datasets]](https://huggingface.co/Twitter)
 
