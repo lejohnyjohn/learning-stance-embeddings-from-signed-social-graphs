@@ -55,7 +55,7 @@ If you use SEM or our datasets in your work, please cite the following:
 @article{pougue2022learning,
   title={Learning Stance Embeddings from Signed Social Graphs},
   author={Pougu{\'e}-Biyong, John and Gupta, Akshay and Haghighi, Aria and El-Kishky, Ahmed},
-  journal={arXiv preprint arXiv:2201.11675},
+  journal={arXiv preprint arXiv:2201.11675v2},
   year={2022}
 }
 ```
