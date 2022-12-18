@@ -1,9 +1,9 @@
 # Learning Stance Embeddings from Signed Social Graphs
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-green.svg?style=flat-square)](http://makeapullrequest.com)
-[![arXiv](https://img.shields.io/badge/arXiv-2201.11675-b31b1b.svg)](https://arxiv.org/abs/2201.11675)
+[![arXiv](https://img.shields.io/badge/arXiv-2201.11675-b31b1b.svg)](https://arxiv.org/abs/2201.11675v2)
 
-This repo contains the code and datasets from our paper [Learning Stance Embeddings from Signed Social Graphs](https://arxiv.org/abs/2201.11675). <br />
-[[PDF]](https://arxiv.org/pdf/2201.11675.pdf)
+This repo contains the code and datasets from our paper [Learning Stance Embeddings from Signed Social Graphs](https://arxiv.org/abs/2201.11675v2). <br />
+[[PDF]](https://arxiv.org/pdf/2201.11675v2.pdf)
 [[HuggingFace Datasets]](https://huggingface.co/Twitter)
 
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
